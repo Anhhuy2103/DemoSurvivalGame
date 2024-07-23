@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: debef163468307a49a1ea2201eb4ed87, type: 3}
+  m_Name: Quest2_KillTurTle
+  m_EditorClassIdentifier: 
+  initialDialog:
+  - 'Haha hey, Now is another thing
+
+    See that turtle? .'
+  - "Kill them. \nAnd Collect 3 Green Apple for me."
+  - Thanks dude.
+  accepOption: 'Yes sir... '
+  acceptAnswer: 'hm... '
+  declineOption: Maybe next time..
+  declineAnswer: oh... how dare you.. FINE!
+  comebackAfterDecline: 'WHAT? '
+  comebackInprogress: ... 1..2 .. AGAIN? Math so hard to you?
+  combackComplete: "Ha Ha Welldone. \nHere, take it."
+  finalWords: "( Mr.Big Hoang Anh give you 1 ly tra sua ) \nMoi quan he cua ban va
+    big hoang anh become better <3 ."
+  coinReward: 1000
+  rewardItem_1: HP Bottle
+  rewardItem_2: Enegy Bottle
+  firstrequirementItem: Grass
+  firstRequirementAmount: 3
+  SecondrequirementItem: 
+  SecondRequirementAmount: 0
+  hasCheckpoints: 0
+  checkpoints: []

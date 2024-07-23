@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: debef163468307a49a1ea2201eb4ed87, type: 3}
+  m_Name: FirstNPC_Quest_1
+  m_EditorClassIdentifier: 
+  initialDialog:
+  - "Hey little Rat, I'm Big Hoang Anh. \nThe boss at this Area. \nand You need TO
+    DO for me something:"
+  - I have a mission, Collect for me 3 ROCK ( press M to check your Map), and comeback
+    here.
+  - "Here, look that weapon, i dont know how to use but maybe you can. \r\n(Press:
+    F to pick up - G to throw Grenade as Lethal - T to throw Grenade as Tatical)"
+  - '--- TUTORIAL ---
+
+    PRESS: I : check inventory
+
+    PRESS: U : open craft
+    menu
+
+    PRESS: P or find shopstore: open your shop
+
+    PRESS:  Tab: to see
+    your status  '
+  - 'Now, go - if you complete, i''ll give you some special. ( mr.Moreti )
+
+    if
+    not, I''ll become a bug in SATO''S Game.
+
+    Lol..'
+  - "Mission 1:\n Collect 3 ROCK"
+  accepOption: OK OK ,Relax, Don't be a F***king bug.
+  acceptAnswer: huh .. Good!... so move your dirty Ass , NOW!
+  declineOption: Wait Wait. give me some time to check ok?
+  declineAnswer: 'huh.. you''re F***king coward.
+
+    If you change your mind, Come
+    Back.
+
+    Now get out of my face!
+
+    bug is coming...!'
+  comebackAfterDecline: huh.. change your mind at your little brain?
+  comebackInprogress: "huh... 1..2.. Still not enough !. \nMath so hard to you ? "
+  combackComplete: 'huh.. Perfect. GoodJob Rat !
+
+    Here, Take it, I promise you
+    the REWARD.'
+  finalWords: 'Finally. I can go home... thanks buddy.
+
+    ( Now, your point''s
+    relationship with Big Hoang Anh +1 )'
+  coinReward: 1000
+  rewardItem_1: GrenadeBoom
+  rewardItem_2: SmokeBoom
+  firstrequirementItem: Stone
+  firstRequirementAmount: 3
+  SecondrequirementItem: 
+  SecondRequirementAmount: 0
+  hasCheckpoints: 0
+  checkpoints: []
