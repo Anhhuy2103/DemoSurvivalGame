@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7354233229122178866
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7216130687271177103}
+  - component: {fileID: 462686485790625544}
+  m_Layer: 0
+  m_Name: GobalReferences--Bullet Effect
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7216130687271177103
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7354233229122178866}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1164.3254, y: 299.73, z: -69.51876}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &462686485790625544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7354233229122178866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11a4aa73ae16a4b4a87734e8a9ed01cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numberWave: 0
+  StonebulletImpactEffectPrefab: {fileID: 3861260883298561257, guid: cc2ce082ed81a6a4d8f73fff06f38394, type: 3}
+  Grenade_PlasmaExplosion_bulletImpactEffectPrefab: {fileID: 3463083818398795173, guid: 7cb7550c07e146442b6f75e74ab44897, type: 3}
+  BloodEffectPrefab: {fileID: 5286419296762393155, guid: c55e11f5563c5fe429e85fda35561d43, type: 3}
+  grenadeExplosionEffect: {fileID: 6982329942610641714, guid: cc16db3f91e785e4683eb053160bdb8a, type: 3}
+  smokeExplosionEffect: {fileID: 3463083818398795173, guid: 3c6f41a54f0f57649a37591629b6f936, type: 3}
