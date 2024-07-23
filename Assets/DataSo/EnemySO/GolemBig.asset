@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e159b2f70847e5246ae85c71faa0c16c, type: 3}
+  m_Name: GolemBig
+  m_EditorClassIdentifier: 
+  CurrentHP: 500
+  MaxHP: 500
+  CurrentEXP: 5
+  maxHP: 100
+  BonusHP: 10
+  minusHealValue: 5

@@ -1,0 +1,566 @@
+fileFormatVersion: 2
+guid: 70329e6db728412fb2a6e0371aaaa001
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Body
+  - first:
+      1: 100002
+    second: BottomCover
+  - first:
+      1: 100004
+    second: Eyeball
+  - first:
+      1: 100006
+    second: Head
+  - first:
+      1: 100008
+    second: HornL01
+  - first:
+      1: 100010
+    second: HornL02
+  - first:
+      1: 100012
+    second: HornL03
+  - first:
+      1: 100014
+    second: HornL04
+  - first:
+      1: 100016
+    second: HornLTip01
+  - first:
+      1: 100018
+    second: HornLTip02
+  - first:
+      1: 100020
+    second: HornLTip03
+  - first:
+      1: 100022
+    second: HornLTip04
+  - first:
+      1: 100024
+    second: HornMid01
+  - first:
+      1: 100026
+    second: HornMid02
+  - first:
+      1: 100028
+    second: HornMid03
+  - first:
+      1: 100030
+    second: HornMidTip01
+  - first:
+      1: 100032
+    second: HornMidTip02
+  - first:
+      1: 100034
+    second: HornMidTip03
+  - first:
+      1: 100036
+    second: HornR01
+  - first:
+      1: 100038
+    second: HornR02
+  - first:
+      1: 100040
+    second: HornR03
+  - first:
+      1: 100042
+    second: HornR04
+  - first:
+      1: 100044
+    second: HornRTip01
+  - first:
+      1: 100046
+    second: HornRTip02
+  - first:
+      1: 100048
+    second: HornRTip03
+  - first:
+      1: 100050
+    second: HornRTip04
+  - first:
+      1: 100052
+    second: Shell
+  - first:
+      1: 100054
+    second: Spine01
+  - first:
+      1: 100056
+    second: Spine02
+  - first:
+      1: 100058
+    second: TurtleShell
+  - first:
+      1: 100060
+    second: UpperCover
+  - first:
+      1: 100062
+    second: //RootNode
+  - first:
+      4: 400000
+    second: Body
+  - first:
+      4: 400002
+    second: BottomCover
+  - first:
+      4: 400004
+    second: Eyeball
+  - first:
+      4: 400006
+    second: Head
+  - first:
+      4: 400008
+    second: HornL01
+  - first:
+      4: 400010
+    second: HornL02
+  - first:
+      4: 400012
+    second: HornL03
+  - first:
+      4: 400014
+    second: HornL04
+  - first:
+      4: 400016
+    second: HornLTip01
+  - first:
+      4: 400018
+    second: HornLTip02
+  - first:
+      4: 400020
+    second: HornLTip03
+  - first:
+      4: 400022
+    second: HornLTip04
+  - first:
+      4: 400024
+    second: HornMid01
+  - first:
+      4: 400026
+    second: HornMid02
+  - first:
+      4: 400028
+    second: HornMid03
+  - first:
+      4: 400030
+    second: HornMidTip01
+  - first:
+      4: 400032
+    second: HornMidTip02
+  - first:
+      4: 400034
+    second: HornMidTip03
+  - first:
+      4: 400036
+    second: HornR01
+  - first:
+      4: 400038
+    second: HornR02
+  - first:
+      4: 400040
+    second: HornR03
+  - first:
+      4: 400042
+    second: HornR04
+  - first:
+      4: 400044
+    second: HornRTip01
+  - first:
+      4: 400046
+    second: HornRTip02
+  - first:
+      4: 400048
+    second: HornRTip03
+  - first:
+      4: 400050
+    second: HornRTip04
+  - first:
+      4: 400052
+    second: Shell
+  - first:
+      4: 400054
+    second: Spine01
+  - first:
+      4: 400056
+    second: Spine02
+  - first:
+      4: 400058
+    second: TurtleShell
+  - first:
+      4: 400060
+    second: UpperCover
+  - first:
+      4: 400062
+    second: //RootNode
+  - first:
+      43: 4300000
+    second: TurtleShell
+  - first:
+      74: 7400000
+    second: WalkFWD
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: TurtleShell
+  externalObjects: {}
+  materials:
+    materialImportMode: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: WalkFWD
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Body/Spine01
+        weight: 1
+      - path: Body/Spine01/Shell
+        weight: 1
+      - path: Body/Spine01/Shell/HornL01
+        weight: 1
+      - path: Body/Spine01/Shell/HornL01/HornLTip01
+        weight: 1
+      - path: Body/Spine01/Shell/HornL02
+        weight: 1
+      - path: Body/Spine01/Shell/HornL02/HornLTip02
+        weight: 1
+      - path: Body/Spine01/Shell/HornL03
+        weight: 1
+      - path: Body/Spine01/Shell/HornL03/HornLTip03
+        weight: 1
+      - path: Body/Spine01/Shell/HornL04
+        weight: 1
+      - path: Body/Spine01/Shell/HornL04/HornLTip04
+        weight: 1
+      - path: Body/Spine01/Shell/HornMid01
+        weight: 1
+      - path: Body/Spine01/Shell/HornMid01/HornMidTip01
+        weight: 1
+      - path: Body/Spine01/Shell/HornMid02
+        weight: 1
+      - path: Body/Spine01/Shell/HornMid02/HornMidTip02
+        weight: 1
+      - path: Body/Spine01/Shell/HornMid03
+        weight: 1
+      - path: Body/Spine01/Shell/HornMid03/HornMidTip03
+        weight: 1
+      - path: Body/Spine01/Shell/HornR01
+        weight: 1
+      - path: Body/Spine01/Shell/HornR01/HornRTip01
+        weight: 1
+      - path: Body/Spine01/Shell/HornR02
+        weight: 1
+      - path: Body/Spine01/Shell/HornR02/HornRTip02
+        weight: 1
+      - path: Body/Spine01/Shell/HornR03
+        weight: 1
+      - path: Body/Spine01/Shell/HornR03/HornRTip03
+        weight: 1
+      - path: Body/Spine01/Shell/HornR04
+        weight: 1
+      - path: Body/Spine01/Shell/HornR04/HornRTip04
+        weight: 1
+      - path: Body/Spine01/Spine02
+        weight: 1
+      - path: Body/Spine01/Spine02/Head
+        weight: 1
+      - path: Body/Spine01/Spine02/Head/BottomCover
+        weight: 1
+      - path: Body/Spine01/Spine02/Head/Eyeball
+        weight: 1
+      - path: Body/Spine01/Spine02/Head/UpperCover
+        weight: 1
+      - path: TurtleShell
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: Walk_TurtleShell_Anim(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: TurtleShell
+      parentName: Walk_TurtleShell_Anim(Clone)
+      position: {x: -0, y: -0.012334714, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body
+      parentName: Walk_TurtleShell_Anim(Clone)
+      position: {x: -0, y: 0.13463865, z: -0.5692238}
+      rotation: {x: 0.036887523, y: 0.706144, z: 0.036887523, w: 0.706144}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Spine01
+      parentName: Body
+      position: {x: -0.31336257, y: 1.0658141e-16, z: 1.3916094e-16}
+      rotation: {x: -0.00000003166497, y: 0.000000029802326, z: -0.5753538, w: 0.8179047}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Spine02
+      parentName: Spine01
+      position: {x: -0.33054718, y: -3.5527136e-17, z: 7.552034e-17}
+      rotation: {x: 0.0000000074959665, y: -0.000000059156697, z: -0.12665392, w: 0.991947}
+      scale: {x: 0.9999999, y: 0.99999994, z: 1}
+    - name: Head
+      parentName: Spine02
+      position: {x: -0.2659768, y: 1.9539925e-16, z: 0.000000001408367}
+      rotation: {x: 0.0000000065120984, y: -0.000000029182893, z: 0.052788228, w: 0.9986058}
+      scale: {x: 1.0000004, y: 1.0000001, z: 1.0000001}
+    - name: Eyeball
+      parentName: Head
+      position: {x: -0.13390945, y: 2.432437e-17, z: 4.1713996e-10}
+      rotation: {x: -0.43952668, y: -0.55391, z: -0.43952668, w: 0.55391014}
+      scale: {x: 0.99999976, y: 0.9999996, z: 0.9999997}
+    - name: UpperCover
+      parentName: Head
+      position: {x: -0.13390945, y: 2.432437e-17, z: 4.1713996e-10}
+      rotation: {x: -0.43952668, y: -0.55391, z: -0.43952668, w: 0.55391014}
+      scale: {x: 0.99999976, y: 0.9999996, z: 0.9999997}
+    - name: BottomCover
+      parentName: Head
+      position: {x: -0.13390945, y: 2.432437e-17, z: 4.1713996e-10}
+      rotation: {x: -0.43952668, y: -0.55391, z: -0.43952668, w: 0.55391014}
+      scale: {x: 0.99999976, y: 0.9999996, z: 0.9999997}
+    - name: Shell
+      parentName: Spine01
+      position: {x: -0.14992227, y: 0.37512904, z: 3.9375008e-17}
+      rotation: {x: -8.5972574e-10, y: -0.00000005971476, z: 0.044605237, w: 0.99900466}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: HornMid01
+      parentName: Shell
+      position: {x: 0.37650892, y: 0.018608263, z: -0.000000002161254}
+      rotation: {x: -0.0000000299829, y: -0.000000016359325, z: 0.96813345, w: -0.25043505}
+      scale: {x: 0.99999994, y: 1.0000001, z: 1.0000001}
+    - name: HornMidTip01
+      parentName: HornMid01
+      position: {x: -0.23230301, y: -8.8817837e-17, z: 0.0000000021612534}
+      rotation: {x: -0.35630652, y: 0.61077464, z: -0.35630658, w: -0.61077464}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000002}
+    - name: HornMid02
+      parentName: Shell
+      position: {x: -0.0054182825, y: 0.34079462, z: 0.000000007455179}
+      rotation: {x: -0.0000000084427585, y: 0.000000059267695, z: 0.7650651, w: -0.643953}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HornMidTip02
+      parentName: HornMid02
+      position: {x: -0.23869218, y: -2.6645352e-17, z: 5.2939556e-24}
+      rotation: {x: -0.05761906, y: 0.7047553, z: -0.05761916, w: -0.7047553}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HornMid03
+      parentName: Shell
+      position: {x: -0.37328306, y: 0.17870386, z: 0.000000006434258}
+      rotation: {x: 0.0000000037209926, y: 1.7882941e-10, z: -0.40659264, w: 0.91360956}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: HornMidTip03
+      parentName: HornMid03
+      position: {x: -0.23350188, y: -1.7763568e-17, z: -1.0587912e-24}
+      rotation: {x: -0.2562576, y: -0.6590387, z: -0.2562576, w: 0.6590388}
+      scale: {x: 1.0000001, y: 0.9999999, z: 0.9999999}
+    - name: HornL01
+      parentName: Shell
+      position: {x: -0.017729156, y: 0.2209885, z: -0.21630123}
+      rotation: {x: -0.26555547, y: -0.26175013, z: -0.6568466, w: 0.6553775}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: HornLTip01
+      parentName: HornL01
+      position: {x: -0.2606151, y: -7.910339e-17, z: -5.3290704e-17}
+      rotation: {x: -0.0011964442, y: -0.392451, z: -0.0028038921, w: 0.9197679}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: HornL03
+      parentName: Shell
+      position: {x: 0.25218183, y: 0.06419484, z: -0.3177189}
+      rotation: {x: -0.22814049, y: -0.42559206, z: -0.77521104, w: 0.40727296}
+      scale: {x: 1, y: 1.0000002, z: 1.0000001}
+    - name: HornLTip03
+      parentName: HornL03
+      position: {x: -0.21928728, y: -3.5527136e-17, z: 8.8817837e-17}
+      rotation: {x: 0.08141581, y: -0.2655517, z: 0.28159046, w: 0.9184556}
+      scale: {x: 1.0000001, y: 0.99999964, z: 0.9999998}
+    - name: HornL02
+      parentName: Shell
+      position: {x: -0.24946098, y: 0.05954975, z: -0.3244844}
+      rotation: {x: -0.4221366, y: -0.23888628, z: -0.4370213, w: 0.75746053}
+      scale: {x: 1, y: 1.0000004, z: 1.0000004}
+    - name: HornLTip02
+      parentName: HornL02
+      position: {x: -0.22917813, y: -8.881784e-18, z: 1.7763568e-17}
+      rotation: {x: -0.072460756, y: -0.26567745, z: -0.2529543, w: 0.9274584}
+      scale: {x: 1, y: 0.9999999, z: 0.9999999}
+    - name: HornL04
+      parentName: Shell
+      position: {x: -0.03628026, y: -0.1045924, z: -0.42496833}
+      rotation: {x: -0.4180085, y: -0.41738293, z: -0.5748649, w: 0.56620735}
+      scale: {x: 1, y: 1, z: 1.0000002}
+    - name: HornLTip04
+      parentName: HornL04
+      position: {x: -0.25213814, y: -3.8857806e-18, z: -1.7763568e-17}
+      rotation: {x: 0.0005225688, y: -0.15285581, z: 0.0033789277, w: 0.9882426}
+      scale: {x: 1, y: 1.0000002, z: 1}
+    - name: HornR01
+      parentName: Shell
+      position: {x: -0.01772882, y: 0.22098848, z: 0.216301}
+      rotation: {x: 0.2655549, y: 0.26174933, z: -0.6568469, w: 0.65537786}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000002}
+    - name: HornRTip01
+      parentName: HornR01
+      position: {x: -0.26061526, y: -1.56819e-17, z: -1.5987211e-16}
+      rotation: {x: 0.392452, y: -0.001196295, z: 0.9197675, w: 0.0028039962}
+      scale: {x: 0.9999997, y: 0.9999996, z: 0.99999976}
+    - name: HornR02
+      parentName: Shell
+      position: {x: -0.2494606, y: 0.059549563, z: 0.324484}
+      rotation: {x: 0.42213666, y: 0.23888564, z: -0.4370206, w: 0.7574611}
+      scale: {x: 1.0000004, y: 1.0000001, z: 1.0000002}
+    - name: HornRTip02
+      parentName: HornR02
+      position: {x: -0.22917853, y: -3.1086245e-17, z: 1.0658141e-16}
+      rotation: {x: 0.26567775, y: -0.072460964, z: 0.92745805, w: 0.25295526}
+      scale: {x: 1.0000004, y: 1.0000005, z: 1.0000002}
+    - name: HornR03
+      parentName: Shell
+      position: {x: 0.25218153, y: 0.0641951, z: 0.31771898}
+      rotation: {x: -0.22814064, y: -0.42559308, z: 0.77521086, w: -0.40727225}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000002}
+    - name: HornRTip03
+      parentName: HornR03
+      position: {x: -0.21928714, y: 5.3290704e-17, z: -1.0658141e-16}
+      rotation: {x: -0.26555073, y: -0.08141568, z: -0.91845566, w: 0.28159118}
+      scale: {x: 1, y: 0.9999996, z: 0.99999976}
+    - name: HornR04
+      parentName: Shell
+      position: {x: -0.036280468, y: -0.104592174, z: 0.42496797}
+      rotation: {x: -0.41800904, y: -0.41738313, z: 0.5748644, w: -0.56620723}
+      scale: {x: 1.000001, y: 1.0000004, z: 1.0000004}
+    - name: HornRTip04
+      parentName: HornR04
+      position: {x: -0.252138, y: -3.4902634e-17, z: -5.3290704e-17}
+      rotation: {x: -0.1528552, y: -0.0005225837, z: -0.9882427, w: 0.0033785999}
+      scale: {x: 0.99999994, y: 0.9999999, z: 0.9999999}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
