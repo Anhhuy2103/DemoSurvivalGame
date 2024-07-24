@@ -75,7 +75,6 @@ public class QuestManager : MonoBehaviour
                 InteractionManager.Instance.GetComponent<InteractionManager>().enabled = true;
             }
             isQuestMenuOpen = false;
-
         }
     }
 

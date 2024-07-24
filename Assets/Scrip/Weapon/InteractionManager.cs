@@ -46,19 +46,10 @@ public class InteractionManager : MonoBehaviour
     [Header("Item Just no Pickup by F key")]
     public GameObject interactionNoDes_Info_UI;
     TextMeshProUGUI interactionNoDes_text;
-  
-
     [Header("Chopable System")]  
     public GameObject chopHolder;
-    public GameObject ResourcesHPbar;
     public Text nameOfTreeText;
     public Text DameText;
-
-    
-  
-    
-
-
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -77,9 +68,12 @@ public class InteractionManager : MonoBehaviour
         interactionItem_text = interaction_Info_UI.GetComponent<TextMeshProUGUI>();
         interactionNoDes_text = interactionNoDes_Info_UI.GetComponent<TextMeshProUGUI>();
     }
-
-
     private void Update()
+    {
+        InItInteractionManager();
+    }
+
+    private void InItInteractionManager()
     {
         Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
         RaycastHit hit;
@@ -95,7 +89,7 @@ public class InteractionManager : MonoBehaviour
             Enemy enemyBIg = objectHitbyRayCast.GetComponent<Enemy>();
             if (enemyBIg && distanceFromPlayer < distanceToHit)
             {
-                chopHolder.gameObject.SetActive(true);             
+                chopHolder.gameObject.SetActive(true);
                 nameOfTreeText.text = enemyBIg.GetEnemyName();
                 hoveredEnemyBig = enemyBIg.gameObject;
                 enemyBIg.isCanMelee = true;
@@ -104,7 +98,7 @@ public class InteractionManager : MonoBehaviour
             {
                 if (hoveredEnemyBig != null)
                 {
-                    
+
                     hoveredEnemyBig.gameObject.GetComponent<Enemy>().isCanMelee = false;
                     hoveredEnemyBig = null;
                     chopHolder.gameObject.SetActive(false);
@@ -113,18 +107,18 @@ public class InteractionManager : MonoBehaviour
             }
             // ------------------------ EnemyCreep ------------------------------------------------------
             EnemyCreep enemyCreep = objectHitbyRayCast.GetComponent<EnemyCreep>();
-            if(enemyCreep && distanceFromPlayer < distanceToHit)
+            if (enemyCreep && distanceFromPlayer < distanceToHit)
             {
-                chopHolder.gameObject.SetActive(true);              
+                chopHolder.gameObject.SetActive(true);
                 nameOfTreeText.text = enemyCreep.GetEnemyName();
                 hoveredEnemyCreep = enemyCreep.gameObject;
                 enemyCreep.isCanMelee = true;
             }
             else
             {
-                if(hoveredEnemyCreep != null)
+                if (hoveredEnemyCreep != null)
                 {
-                   
+
                     hoveredEnemyCreep.gameObject.GetComponent<EnemyCreep>().isCanMelee = false;
                     hoveredEnemyCreep = null;
                     chopHolder.gameObject.SetActive(false);
@@ -141,13 +135,13 @@ public class InteractionManager : MonoBehaviour
             ChopableTree chopableTree = objectHitbyRayCast.GetComponent<ChopableTree>();
             if (chopableTree && distanceFromPlayer < distanceToPickUp)
             {
-              
+
                 chopableTree.isPlayerInRange = true;
                 chopableTree.isCanChop = true;
                 HoveredSeletedTree = chopableTree.gameObject;
                 chopHolder.gameObject.SetActive(true);
                 nameOfTreeText.text = chopableTree.GetTreeName();
-                
+
             }
             else
             {
@@ -163,7 +157,7 @@ public class InteractionManager : MonoBehaviour
             ChopableStone chopableStone = objectHitbyRayCast.GetComponent<ChopableStone>();
             if (chopableStone && distanceFromPlayer < distanceToPickUp)
             {
-               
+
                 chopableStone.isPlayerInRange = true;
                 chopableStone.isCanChop = true;
                 HoveredSeletedStone = chopableStone.gameObject;
@@ -181,14 +175,6 @@ public class InteractionManager : MonoBehaviour
                     nameOfTreeText.text = "";
                 }
             }
-
-
-
-
-
-
-
-
             // --------------------------------- Weapon-Infomation  ----------------------------------
             JustShow_InteractableObject justShow = objectHitbyRayCast.GetComponent<JustShow_InteractableObject>();
             if (justShow && distanceFromPlayer < distanceToPickUp)
@@ -208,7 +194,7 @@ public class InteractionManager : MonoBehaviour
             InteractableObject interactableObject = objectHitbyRayCast.GetComponent<InteractableObject>();
             if (interactableObject && distanceFromPlayer < distanceToPickUp)
             {
-                if(interactableObject.itemDecayMode == InteractableObject.typeOfDecayItem.canDecay)
+                if (interactableObject.itemDecayMode == InteractableObject.typeOfDecayItem.canDecay)
                 {
                     timeDecaytext.gameObject.SetActive(true);
                     interactableObject.interactable = true;
@@ -218,17 +204,14 @@ public class InteractionManager : MonoBehaviour
                     timeDecaytext.gameObject.SetActive(false);
                     interactableObject.interactable = false;
                 }
-                
-                    isActiveWeaponInterac = true;
-                    hoveredSelectedObject = interactableObject.gameObject;
-                    interactionItem_text.text = interactableObject.GetItemName();
-                    interaction_Info_UI.SetActive(true);
 
-                    playerInRange = true;
-                    onTarget = true;
+                isActiveWeaponInterac = true;
+                hoveredSelectedObject = interactableObject.gameObject;
+                interactionItem_text.text = interactableObject.GetItemName();
+                interaction_Info_UI.SetActive(true);
 
-                
-              
+                playerInRange = true;
+                onTarget = true;
 
                 if (interactableObject.CompareTag("Pickable"))
                 {
@@ -240,7 +223,7 @@ public class InteractionManager : MonoBehaviour
                     centerDotImage.gameObject.SetActive(true);
                     handIcon.gameObject.SetActive(false); // fix here
                 }
-                if (interactableObject.CompareTag("Weapon")&& GlobalReferences.Instance.isActiveEquipnbro)
+                if (interactableObject.CompareTag("Weapon") && GlobalReferences.Instance.isActiveEquipnbro)
                 {
                     timeDecaytext.gameObject.SetActive(false);
                 }
@@ -252,11 +235,11 @@ public class InteractionManager : MonoBehaviour
             }
             else
             {
-               if(hoveredSelectedObject!= null)
+                if (hoveredSelectedObject != null)
                 {
                     hoveredSelectedObject.gameObject.GetComponent<InteractableObject>().interactable = false;
                     hoveredSelectedObject = null;
-                    timeDecaytext.gameObject.SetActive(false);                 
+                    timeDecaytext.gameObject.SetActive(false);
                 }
                 else
                 {
@@ -268,25 +251,25 @@ public class InteractionManager : MonoBehaviour
                     centerDotImage.gameObject.SetActive(true);
                     handIcon.gameObject.SetActive(false); // fix here
                 }
-                
+
             }
             //- ------------------------------ PLACEMENT ---------------------------------
 
             StorageBox storageBox = objectHitbyRayCast.GetComponent<StorageBox>();
-            if(storageBox && storageBox.playerInRange && !PlacementSystem.Instance.inPlacementMode)
+            if (storageBox && storageBox.playerInRange && !PlacementSystem.Instance.inPlacementMode)
             {
                 interactionItem_text.text = "E To Open";
                 interaction_Info_UI.SetActive(true);
 
                 hoveredStorageBox = storageBox.gameObject;
-                if(Input.GetKeyDown(KeyCode.E))
+                if (Input.GetKeyDown(KeyCode.E))
                 {
                     StorageManager.Instance.OpenBox(storageBox);
                 }
             }
             else
             {
-                if(hoveredStorageBox != null)
+                if (hoveredStorageBox != null)
                 {
                     hoveredStorageBox = null;
                 }
@@ -382,7 +365,7 @@ public class InteractionManager : MonoBehaviour
 
                 }
             }
-            if(!npc && !interactableObject && !chopableTree && !chopableStone && !storageBox)
+            if (!npc && !interactableObject && !chopableTree && !chopableStone && !storageBox)
             {
                 interactionItem_text.text = "";
                 interaction_Info_UI.gameObject.SetActive(false);
@@ -397,9 +380,8 @@ public class InteractionManager : MonoBehaviour
             timeDecaytext.gameObject.SetActive(false);
             centerDotImage.gameObject.SetActive(true);
             handIcon.gameObject.SetActive(false); // fix here
-            
-        }
 
+        }
     }
 
     public void DisableSelection()
@@ -408,8 +390,6 @@ public class InteractionManager : MonoBehaviour
         centerDotImage.enabled = false;
         interaction_Info_UI.SetActive(false);
         hoveredSelectedObject = null;
-
-
     }
 
     public void EnableSelection()
@@ -417,8 +397,5 @@ public class InteractionManager : MonoBehaviour
         handIcon.enabled = true;
         centerDotImage.enabled = true;
         interaction_Info_UI.SetActive(true);
-
     }
-
-   
 }

@@ -135,6 +135,7 @@ public class CraftingManager : MonoBehaviour
             ConstructionCatelogyUI.SetActive(false);
 
             descriptionRequireUI.SetActive(false);
+            ShopManager.Instance.ShopsCatelogyUI.gameObject.SetActive(false);
             Cursor.lockState = CursorLockMode.Confined;
             Cursor.visible = true;
             IsCraftOpen = true;
@@ -150,7 +151,7 @@ public class CraftingManager : MonoBehaviour
             }
             craftingSceneUI.SetActive(false);
             ItemCatelogyUI.SetActive(false);
-
+            ShopManager.Instance.ShopsCatelogyUI.gameObject.SetActive(false);
             ConstructionCatelogyUI.SetActive(false);
             toolsCatelogyUI.SetActive(false);
             descriptionRequireUI.SetActive(false);

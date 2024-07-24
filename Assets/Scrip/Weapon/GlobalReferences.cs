@@ -54,15 +54,4 @@ public class GlobalReferences : MonoBehaviour
             Instance = this;
         }
     }
-
-    public bool CheckIsCloseSystem()
-    {
-        return
-      !DialogManager.Instance.isDiablogUIActive
-        && !InventorySystem.Instance.isInventoryOpen
-        && !CraftingManager.Instance.IsCraftOpen
-        && !ConstructionManager.Instance.inConstructionMode
-        && !ShopManager.Instance.isShopOpen
-        && !IngameMenuManager.Instance.isActiveMenuPanel;
-    }
 }

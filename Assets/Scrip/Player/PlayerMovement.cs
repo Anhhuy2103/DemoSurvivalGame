@@ -95,10 +95,7 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-        if (Input.GetMouseButton(1) && GlobalReferences.Instance.CheckIsCloseSystem()
-            && !QuestManager.Instance.isQuestMenuOpen
-            && !PlacementSystem.Instance.inPlacementMode
-            && !StorageManager.Instance.storageUIOpen)
+        if (Input.GetMouseButton(1) && checkIf())
         {
 
             PlayerAnimator.SetBool("isADSCamera", true);
@@ -109,7 +106,7 @@ public class PlayerMovement : MonoBehaviour
             PlayerAnimator.SetBool("isADSCamera", false);
         }
 
-        if (canMove  && !StorageManager.Instance.storageUIOpen)
+        if (canMove && !StorageManager.Instance.storageUIOpen)
         {
             handleMovement();
             handleMouseLook();
@@ -135,7 +132,16 @@ public class PlayerMovement : MonoBehaviour
         MinusEnegyWhenRun();
     }
 
-
+    private bool checkIf()
+    {
+        return
+        !DialogManager.Instance.isDiablogUIActive
+       && !InventorySystem.Instance.isInventoryOpen
+       && !CraftingManager.Instance.IsCraftOpen
+       && !ConstructionManager.Instance.inConstructionMode
+       && !ShopManager.Instance.isShopOpen
+       && !IngameMenuManager.Instance.isActiveMenuPanel;
+    }
     //---------------------- Status - + ------------------------
     private void MinusEnegyWhenRun()
     {
@@ -172,7 +178,9 @@ public class PlayerMovement : MonoBehaviour
             && !CraftingManager.Instance.IsCraftOpen
             && !DialogManager.Instance.isDiablogUIActive
             && !QuestManager.Instance.isQuestMenuOpen
-           && !StorageManager.Instance.storageUIOpen)
+           && !StorageManager.Instance.storageUIOpen
+           && !ShopManager.Instance.isShopOpen
+           && !IngameMenuManager.Instance.isActiveMenuPanel)
         {
             rotationX -= Input.GetAxis("Mouse Y") * lookspeedY;
             rotationX = Mathf.Clamp(rotationX, -upperLooklimit, lowerLooklimit);

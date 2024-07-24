@@ -15,6 +15,7 @@ public class IngameMenuManager : MonoBehaviour
     [SerializeField] private Button noButton;
     [SerializeField] private GameObject PlayerStatusPanel;
     [SerializeField] private GameObject middleDot;
+    [SerializeField] private GameObject tutorialMenu;
     public bool isActiveMenuPanel;
     public bool isActiveMapPanel;
 
@@ -61,6 +62,10 @@ public class IngameMenuManager : MonoBehaviour
         {
             toggleMenu();
         }
+        if(Input.GetKeyUp(KeyCode.Escape))
+        {
+            tutorialMenu.gameObject.SetActive(false);
+        }
 
         if (Input.GetKeyUp(KeyCode.M)
            && !DialogManager.Instance.isDiablogUIActive
@@ -106,8 +111,6 @@ public class IngameMenuManager : MonoBehaviour
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
             }
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
             yesNoPanel.SetActive(false);
             LoadGameMenu.SetActive(false);
             SettingGameMenu.SetActive(false);
@@ -194,4 +197,29 @@ public class IngameMenuManager : MonoBehaviour
         InteractionManager.Instance.EnableSelection();
         InteractionManager.Instance.GetComponent<InteractionManager>().enabled = true;
     }
+
+    public void openTutorial()
+    {
+        tutorialMenu.SetActive(!tutorialMenu.activeSelf);
+
+        if (tutorialMenu.activeInHierarchy)
+        {
+
+            Cursor.lockState = CursorLockMode.Confined;
+            Cursor.visible = true;
+            InteractionManager.Instance.DisableSelection();
+            InteractionManager.Instance.GetComponent<InteractionManager>().enabled = false;
+        }
+        else
+        {
+            if (!InventorySystem.Instance.isInventoryOpen)
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+                InteractionManager.Instance.EnableSelection();
+                InteractionManager.Instance.GetComponent<InteractionManager>().enabled = true;
+            }
+        }
+    }
 }
+

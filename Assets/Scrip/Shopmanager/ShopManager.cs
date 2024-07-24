@@ -16,8 +16,6 @@ public class ShopManager : MonoBehaviour
     [ReadOnly] public int PlayerMoney;
     public Transform itemPrefabSpawnPoint;
 
-
-    [SerializeField] private GameObject RiffleBox_Prefab;
     public static ShopManager Instance { get; set; }
     private void Awake()
     {
@@ -74,6 +72,7 @@ public class ShopManager : MonoBehaviour
             CraftingManager.Instance.ItemCatelogyUI.SetActive(false);
             CraftingManager.Instance.ConstructionCatelogyUI.SetActive(false);
             CraftingManager.Instance.CraftButton.gameObject.SetActive(false);
+
             descriptionRequireUI.SetActive(false);
             Cursor.lockState = CursorLockMode.Confined;
             Cursor.visible = true;
@@ -88,11 +87,7 @@ public class ShopManager : MonoBehaviour
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
             }
-            CraftingManager.Instance.craftingSceneUI.SetActive(false);
-            CraftingManager.Instance.ItemCatelogyUI.SetActive(false);
             ShopsCatelogyUI.SetActive(false);
-            CraftingManager.Instance.ConstructionCatelogyUI.SetActive(false);
-            CraftingManager.Instance.toolsCatelogyUI.SetActive(false);
             descriptionRequireUI.SetActive(false);
             isShopOpen = false;
             InteractionManager.Instance.EnableSelection();
@@ -102,16 +97,9 @@ public class ShopManager : MonoBehaviour
 
     public void ClickToCloseShopUI()
     {
-        if (!InventorySystem.Instance.isInventoryOpen)
-        {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
-        }
-        CraftingManager.Instance.craftingSceneUI.SetActive(false);
-        CraftingManager.Instance.ItemCatelogyUI.SetActive(false);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         ShopsCatelogyUI.SetActive(false);
-        CraftingManager.Instance.ConstructionCatelogyUI.SetActive(false);
-        CraftingManager.Instance.toolsCatelogyUI.SetActive(false);
         descriptionRequireUI.SetActive(false);
         isShopOpen = false;
         InteractionManager.Instance.EnableSelection();
@@ -134,15 +122,13 @@ public class ShopManager : MonoBehaviour
     }
     void MenuBuyAnyItem(ShopItemCost itemCost)   // can be menu Shop for any item
     {
-
         // add to invenyory  - The SHOP system is the same method
-        if(isShopOpen)
+        if (isShopOpen)
         {
-            CraftingManager.Instance.CraftButton.gameObject.SetActive(false) ; 
+            CraftingManager.Instance.CraftButton.gameObject.SetActive(false);
         }
         InventorySystem.Instance.AddToInventory(itemCost.ItemName);
         PlayerStatusManager.Instance.DecreaseMoney(itemCost.Cost);
-       
     }
 
     public IEnumerator calculate()
@@ -150,15 +136,12 @@ public class ShopManager : MonoBehaviour
         yield return 0;
         InventorySystem.Instance.ReCalculateList();
         // check nguyen lieu can.
-
     }
 
     void SpawnItemPrefab(ShopItemCost itemCost)   // can be menu Shop for any item
     {
-        
-        Instantiate(Resources.Load<GameObject>(itemCost.ItemName),itemPrefabSpawnPoint.position,Quaternion.identity);
+        Instantiate(Resources.Load<GameObject>(itemCost.ItemName), itemPrefabSpawnPoint.position, Quaternion.identity);
         PlayerStatusManager.Instance.DecreaseMoney(itemCost.Cost);
-       
     }
     //-----***** BUTTON CLICK CATALOGE *****-----
 
